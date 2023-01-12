@@ -205,12 +205,31 @@ input{
 /* Responsive Section */
 
 @media screen and (max-width: 576px){
-    .skills-container , .resume-content, .about-info-container, .contract{
+    .header{
+        background-image: none;
+    }
+    nav, 
+    .banner,
+     .skills-container ,
+      .resume-content,
+       .about-info-container,
+        .contract{
         flex-direction: column;
         gap: 20px;
         padding: 10px 20px;
     }
-    .about, .contract{
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about,
+     .contract{
         padding: 20px;
     }
     .contract input[type="text"], input[type="email"], textarea{
@@ -218,13 +237,15 @@ input{
     }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .about, .contract{
+    .about,
+     .contract{
         padding: 20px;
     }
     .contract{
         flex-direction: column;
     }
-    .skills-container , .resume-content, .about-info-container {
+    .skills-container,
+     .resume-content, .about-info-container {
         padding: 10px 20px;
 
     }
