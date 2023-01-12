@@ -202,3 +202,34 @@ input{
     text-decoration: none;
 } 
 
+/* Responsive Section */
+
+@media screen and (max-width: 576px){
+    .skills-container , .resume-content, .about-info-container, .contract{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    .about, .contract{
+        padding: 20px;
+    }
+    .contract input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 5px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .about, .contract{
+        padding: 20px;
+    }
+    .contract{
+        flex-direction: column;
+    }
+    .skills-container , .resume-content, .about-info-container {
+        padding: 10px 20px;
+
+    }
+}
+
+.hide{
+    display: none;
+}
